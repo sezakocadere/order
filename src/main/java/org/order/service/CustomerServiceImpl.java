@@ -11,7 +11,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public List<Customer> getCustomersGivenCharOfFullName(List<Customer> customers, CharSequence givenChar) {
         // returns list customers with the given letter in their full names
-        return customers.stream().filter(customer -> customer.getFullName().contains(givenChar)).toList();
+        return customers.stream().filter(customer -> customer.getFullName().toLowerCase().contains(givenChar)).toList();
     }
 
     @Override

@@ -36,7 +36,7 @@ public class DataUtility {
     }
 
     public static Map<Long, Customer> prepareCustomerList() {
-        return Maps.newHashMap(ImmutableMap.of(1L, Customer.builder().fullName("Seza Kocadere").createdTime(LocalDate.of(2022, 6, 9)).build(),
+        return Maps.newHashMap(ImmutableMap.of(1L, Customer.builder().fullName("Seza KOCADERE").createdTime(LocalDate.of(2022, 6, 9)).build(),
                 2L, Customer.builder().fullName("Slim Shady").createdTime(LocalDate.of(2022, 6, 5)).build(),
                 3L, Customer.builder().fullName("Albert Einstein").createdTime(LocalDate.of(2022, 6, 1)).build(),
                 4L, Customer.builder().fullName("Nikola Tesla").createdTime(LocalDate.of(2022, 6, 2)).build(),
