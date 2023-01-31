@@ -30,6 +30,11 @@ All customers listed..
 List of customers contains c in their full name 
 [Customer(fullName=Seza KOCADERE, createdTime=2022-06-09)]
 
+List of all orders in system 
+[Order(products=[Product(name=MICROSOFT Xbox Series X 1TB, price=8300, seller=Seller(name=Persona Technology, sector=ELECTRONICS))], customer=Customer(fullName=Seza KOCADERE, createdTime=2022-06-09), createdDate=2022-06-22), Order(products=[Product(name=MICROSOFT Xbox Series X 1TB, price=8300, seller=Seller(name=Persona Technology, sector=ELECTRONICS)), Product(name=Apple USB-C Charge Cable (2m), price=320, seller=Seller(name=Apple, sector=TECHNOLOGY))], customer=Customer(fullName=Slim Shady, createdTime=2022-06-05), createdDate=2022-06-25), Order(products=[Product(name=Apple USB-C Charge Cable (2m), price=320, seller=Seller(name=Apple, sector=TECHNOLOGY)), Product(name=Pure Bliss Chocolate Gift Basket, Classic Ribbon, price=78, seller=Seller(name=GODIVA, sector=FOOD))], customer=Customer(fullName=Albert Einstein, createdTime=2022-06-01), createdDate=2022-06-21), Order(products=[Product(name=Frost King RC160 Automatic Electric Roof Cable Kits, price=100, seller=Seller(name=Frost King Store, sector=ELECTRONICS)), Product(name=Pure Bliss Chocolate Gift Basket, Classic Ribbon, price=78, seller=Seller(name=GODIVA, sector=FOOD))], customer=Customer(fullName=Nikola Tesla, createdTime=2022-06-02), createdDate=2022-06-21), Order(products=[Product(name=Time Travel in Einstein's Universe: The Physical Possibilities of Travel Through Time, price=65, seller=Seller(name=Mariner Books, sector=BOOKS))], customer=Customer(fullName=Stephen Hawking, createdTime=2022-06-01), createdDate=2022-06-21)]
+
+Total invoice of customers registered in the system in June: 17561 TRY
+
 Total invoice of customers registered in the system in June: 17561 TRY
 
 Total invoice of customers registered in the system in currently month: 0 TRY
