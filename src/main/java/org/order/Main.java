@@ -29,6 +29,7 @@ public class Main {
         System.out.println("All customers listed.. \n" + customers);
         System.out.println("List of customers contains " + VALUE_NAME + " in their full name \n" + customerService.getCustomersGivenCharOfFullName(customers.values().stream().toList(), VALUE_NAME) + "\n");
         List<Order> orders = DataUtility.ORDERS;
+        System.out.println("List of all orders in system \n" + orders);
         System.out.println("Total invoice of customers registered in the system in June: " + orderService.getTotalInvoiceByMonth(orders, 6) + CURRENCY + "\n");
         System.out.println("Total invoice of customers registered in the system in currently month: " + orderService.getTotalInvoiceByMonth(orders) + CURRENCY + "\n");
         System.out.println("All invoice of system:");
