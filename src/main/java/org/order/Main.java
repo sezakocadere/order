@@ -27,19 +27,19 @@ public class Main {
         System.out.println("Welcome to the order program! \n");
         Map<Long, Customer> customers = DataUtility.CUSTOMERS;
         System.out.println("All customers listed.. \n" + customers);
-        System.out.println("List of customers contains " + VALUE_NAME + " in their full name \n" + customerService.getCustomersGivenCharOfFullName(customers.values().stream().toList(), VALUE_NAME)+ "\n");
+        System.out.println("List of customers contains " + VALUE_NAME + " in their full name \n" + customerService.getCustomersGivenCharOfFullName(customers.values().stream().toList(), VALUE_NAME) + "\n");
         List<Order> orders = DataUtility.ORDERS;
-        System.out.println("Total invoice of customers registered in the system in June: " + orderService.getTotalInvoiceByMonth(orders, 6) + CURRENCY+ "\n");
-        System.out.println("Total invoice of customers registered in the system in currently month: " + orderService.getTotalInvoiceByMonth(orders) + CURRENCY+ "\n");
+        System.out.println("Total invoice of customers registered in the system in June: " + orderService.getTotalInvoiceByMonth(orders, 6) + CURRENCY + "\n");
+        System.out.println("Total invoice of customers registered in the system in currently month: " + orderService.getTotalInvoiceByMonth(orders) + CURRENCY + "\n");
         System.out.println("All invoice of system:");
         orders.forEach(order -> {
             System.out.println(order.getInvoice() + CURRENCY);
         });
         List<BigDecimal> invoicesOverGivenAmount = orderService.filterInvoiceOverGivenAmount(orders, VALUE_INVOICE);
         System.out.println("\nInvoices Of More Than " + VALUE_INVOICE + CURRENCY + "\n" + invoicesOverGivenAmount + CURRENCY + "\n");
-        System.out.println("Average invoices Of More Than " + VALUE_INVOICE + CURRENCY + "\n" + orderService.averageOfInvoices(invoicesOverGivenAmount) + CURRENCY+ "\n");
-        System.out.println("Invoices Of Less Than " + VALUE_INVOICE + CURRENCY + "\n" + orderService.filterInvoiceUnderGivenAmount(orders, VALUE_INVOICE) + CURRENCY+ "\n");
-        System.out.println("List of customers names by invoices of less than " + VALUE_INVOICE3 + CURRENCY + "\n" + customerService.getCustomerNamesByGivenAmountUnderOrders(orders, VALUE_INVOICE3)+ "\n");
+        System.out.println("Average invoices Of More Than " + VALUE_INVOICE + CURRENCY + "\n" + orderService.averageOfInvoices(invoicesOverGivenAmount) + CURRENCY + "\n");
+        System.out.println("Invoices Of Less Than " + VALUE_INVOICE + CURRENCY + "\n" + orderService.filterInvoiceUnderGivenAmount(orders, VALUE_INVOICE) + CURRENCY + "\n");
+        System.out.println("List of customers names by invoices of less than " + VALUE_INVOICE3 + CURRENCY + "\n" + customerService.getCustomerNamesByGivenAmountUnderOrders(orders, VALUE_INVOICE3) + "\n");
         System.out.println("Sectors of sellers with average invoice of less than " + VALUE_INVOICE2 + CURRENCY + " in June :");
         Set<Sector> sectors = new HashSet<>();
         orderService.getAverageInvoiceOfOrdersAndSellersByMonth(orders, 6, VALUE_INVOICE2).keySet().forEach(sellers -> sellers.forEach(seller -> {
