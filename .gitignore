@@ -1,0 +1,4 @@
+# Compiled class file
+target/
+*.class
+.idea/
