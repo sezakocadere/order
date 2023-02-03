@@ -35,8 +35,6 @@ List of all orders in system
 
 Total invoice of customers registered in the system in June: 17561 TRY
 
-Total invoice of customers registered in the system in June: 17561 TRY
-
 Total invoice of customers registered in the system in currently month: 0 TRY
 
 All invoice of system:
